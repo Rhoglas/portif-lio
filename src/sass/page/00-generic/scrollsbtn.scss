@@ -1,0 +1,15 @@
+.scrollPage {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1rem;
+  right: 1rem;
+
+  .scroll {
+    text-decoration: none;
+    div {
+      background-color: $color-3;
+      margin: 0.3rem;
+      border-radius: 0.2rem;
+    }
+  }
+}

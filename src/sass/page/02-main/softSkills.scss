@@ -1,0 +1,58 @@
+// @import '../../import/imports.scss';
+
+.skills {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 6rem 0 4rem 0;
+
+  .skillHeader {
+    h2 {
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5),
+        2px 2px 8px rgba(206, 89, 55, 0);
+      color: #55c34d;
+    }
+  }
+  .skBasic {
+    width: 100%;
+    .skTitle {
+      background-color: $color-3;
+      border-radius: 0.3rem;
+      padding: 0.3rem;
+      margin: 0 0 1rem 0;
+      h5 {
+        color: $color-1;
+        border-bottom: 3px solid $color-1;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .skillCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+
+    .skillIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      background-color: $color-4;
+      color: $color-1;
+      border: 4px solid $color-3;
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      text-align: center;
+      width: 7.5rem;
+      p {
+        color: $color-3;
+      }
+    }
+  }
+}

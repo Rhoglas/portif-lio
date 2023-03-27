@@ -1,0 +1,32 @@
+// @import "../../import/imports.scss";
+
+.contSobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  img {
+    height: 10rem;
+    border: 3px solid $color-2;
+    border-radius: 0.5rem;
+    margin: 0 5rem 0 0;
+  }
+
+  .contBio {
+    h5 {
+      color: $color-3;
+      margin: 0 0 2rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contSobre {
+    margin: 7rem auto;
+    gap: 3rem;
+    flex-flow: column;
+    img {
+      margin: 0;
+    }
+  }
+}

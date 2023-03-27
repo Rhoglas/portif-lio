@@ -1,0 +1,118 @@
+@import "../../import/imports.scss";
+
+.contCard {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 10px 0px 40px 0px rgba(191, 230, 236, 0.31);
+
+  border-radius: 0.6rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 25rem;
+
+  // Style of profile
+  .perfil {
+    text-align: center;
+    img {
+      width: 8rem;
+      border: 0.3rem solid $color-3;
+      border-radius: 100%;
+    }
+    h6,
+    h4 {
+      overflow: hidden;
+    }
+    h4 {
+      font-weight: bold;
+      color: $color-1;
+    }
+
+    h6 {
+      display: inline-block;
+      justify-content: center;
+    }
+  }
+  // Style of numbers
+  .contNum {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 8px;
+    gap: 0.4rem;
+
+    .num {
+      background-color: $color-1;
+      color: $color-2;
+      border: 2px solid $color-3;
+      text-align: center;
+      cursor: pointer;
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: $color-2;
+        border: 2px solid $color-1;
+
+        color: $color-1;
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+  // Style of input
+  .inputCont {
+    display: flex;
+    flex-flow: column;
+
+    gap: 0.4rem;
+    margin: 0.5rem 0;
+
+    input {
+      border-radius: 0.3rem;
+      padding: 0.2rem;
+    }
+
+    .inputLabel {
+      display: flex;
+      flex-flow: column;
+      label {
+        color: $color-1;
+        font-weight: 800;
+      }
+      #sSearch {
+        background-color: $color-2;
+        color: $color-1;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .contCard {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .contCard {
+    .contNum {
+      .num {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

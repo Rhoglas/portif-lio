@@ -1,0 +1,48 @@
+// Import of variables
+@import "./import/imports.scss";
+@import "./page/00-generic/button.scss";
+
+// Import of pages
+@import "./page/00-generic/containers.scss";
+@import "./page/00-generic/success.scss";
+@import "./page/00-generic/scrollsbtn.scss";
+@import "./page/00-generic/direct.scss";
+@import "./page/01-home/contTxt.scss";
+@import "./page/01-home/card.scss";
+@import "./page/01-home/nav.scss";
+@import "./page/02-main/contSobre.scss";
+@import "./page/01-home/routes.scss";
+@import "./page/01-home/followers.scss";
+@import "./page/02-main/softSkills.scss";
+@import "./page/03-footer/links.scss";
+@import "./page/03-footer/contact.scss";
+
+// Import of font-family
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+// Formatação geral
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-1;
+  color: $color-2;
+}
+
+a {
+  text-decoration: none;
+  color: $color-1;
+}
+
+p {
+  margin: 0;
+}

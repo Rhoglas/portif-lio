@@ -1,0 +1,33 @@
+// @import "../../import/imports.scss";
+
+.btn0 {
+  background-color: $color-1;
+  color: $color-2;
+  font-weight: bold;
+  cursor: pointer;
+
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $color-2;
+    color: $color-1;
+  }
+}
+
+.btn00 {
+  display: inline-block;
+  background-color: $color-3;
+  color: $color-1;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+  margin: 0 1rem 0 0;
+
+  &:hover {
+    background-color: $color-2;
+    color: $color-1;
+  }
+}
